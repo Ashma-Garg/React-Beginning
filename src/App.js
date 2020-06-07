@@ -5,6 +5,10 @@ import Greet from './component/Greet';
 import Welcome from './component/Welcome';
 import Hello from './component/Hello';
 import Message from'./component/Message'
+import Counter from './component/Counter'
+import EventBind from './component/EventBind'
+import ParentComp from './component/ParentComp'
+import NameList from './component/NameList'
 
 function App() {
   return (
@@ -24,6 +28,7 @@ function App() {
           Learn React
         </a>
       </header> */}
+      <Counter />
       <Greet name='Clark' heroName='SuperMan'>
         <p>Favourite Character!</p>
         <button value="Action">Action</button>
@@ -38,6 +43,9 @@ function App() {
       <Hello name="Clark" heroName="SuperMan"/>
 
       <Message />
+      <ParentComp />
+      <EventBind/>
+      <NameList/>
     </div>
   );
 }
